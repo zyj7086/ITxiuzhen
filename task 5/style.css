@@ -95,9 +95,10 @@ main {
 
 
 .main-th1 {
-	display: inline-block;
-	padding: 0 1rem 0 1.5rem;
-	background: url('images/star.png') no-repeat left center;
+
+	padding: 1rem 1rem 0 1.8rem;
+	background: url('images/star.png') no-repeat;
+	background-position: left 1.2rem;
 	background-size: 1.5rem;
 	font-size: 1.4rem;
 	margin-left: 1rem;
