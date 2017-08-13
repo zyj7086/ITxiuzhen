@@ -5,7 +5,6 @@ body {
 	color: white;
 	font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 	background-color: #68cdd5;
-	max-width: 72rem;
 	min-width: 32rem;
 	padding: 0;
 	margin: 0;
@@ -19,9 +18,16 @@ body {
 	margin-bottom: 4rem;
 }
 .hero {
-	display: block;
 	margin:5rem auto 6rem;
+	max-width: 100%;
 }
+.hero img {
+	display: block;
+
+
+	margin:0 auto;
+}
+
 .des {
 	font-size: 3rem;
 	line-height: 5.4rem;
