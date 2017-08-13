@@ -114,10 +114,13 @@ main {
 	border-bottom:  0.1rem #e1e5e7 solid;
 }
 .main-th2 {
+	display: block;
 	color: #e1e5e7;
 	margin: 1rem;
 	padding-right: 1rem;
 	border-right:0.1rem solid #e1e5e7;
+	min-width: 5rem;
+
 
 }
 .main-th3 {
@@ -135,7 +138,9 @@ footer {
 	bottom: 0;
 	width: 100%;
 	display: flex;
-
+	align-items: flex-end;
+	background-color:#fff;
+	height: 6rem;
 	padding-bottom: 0.5rem;
 
 }
