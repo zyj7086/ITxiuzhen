@@ -1,0 +1,211 @@
+body {
+	margin:0;
+	padding: 0;
+	font-size: 62.5%;
+}
+
+header {
+	background-color: #5fc0cd;
+	display: flex;
+	padding-top:0.8rem;
+	padding-bottom:0.8rem;
+	position: relative;
+
+}
+.container {
+	max-width:72rem; 
+}
+.btn-group {
+	margin:0 auto; 
+
+}
+.btn.dark {
+	color: #fff;
+	background-color: #55a8b3;
+	font-size: 3.4rem;
+	border-radius: 1rem;
+}
+.btn.btn-default {
+	font-size: 3.4rem;
+	color: #5fc0cd;
+	border-radius: 1rem;
+}
+
+.location {
+	width: 4.5rem;
+	height: 4.5rem;
+	background:url("images/sprite.png") no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+}
+
+
+/*
+=========MAIN===========*/
+.row.selection {
+	border-bottom: 0.1rem solid #e1e5e7;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+.select {
+
+	height: 5rem;
+	font-size:2.8rem;
+	color:#999999;
+	text-align: center;
+	margin: 1.5rem 0;
+	font-weight: bold;
+	vertical-align: center;
+}
+
+
+.col-xs-4:nth-child(2) {
+	border-right: 0.1rem solid #e1e5e7;
+	border-left: 0.1rem solid #e1e5e7;
+}
+.caret {
+	position: absolute;
+	top: 1.3rem;
+	right: 2.5rem;
+}
+
+
+
+
+
+.list-group-item-title {
+	font-size: 2.8rem;
+	color: #999;
+	display: flex;
+	align-items: baseline;
+}
+.list-group-item-title .date {
+	width: 2.5rem;
+	height: 2.5rem;
+	background: url("images/sprite.png") no-repeat;
+	background-position: -50px 0;
+	background-size: cover;
+	margin-right: 1rem;
+}
+.list-group-item-title .place {
+	width: 2.5rem;
+	height: 2.5rem;
+	background: url("images/sprite.png") no-repeat;
+	background-position: -25px 0;
+	background-size: cover;
+	margin-right: 1rem;
+
+}
+
+
+.list-group-item-text {
+	color: #333;
+	font-size: 2.8rem;
+	font-weight: bold;
+	margin-left: 3rem;
+	margin-left: 7rem;
+	
+}
+
+.list-group-item-price {
+	font-size: 3rem;
+	color: #e63b0e;
+	position: absolute;
+	right: 3rem;
+	
+}
+.list-group-item-price span {
+	color: #5fc0cd;
+}
+
+
+.list-group-item .row {
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+
+
+.list-group-item {
+	border:none;
+	border-bottom: 2px solid #e1e5e7;
+}
+
+
+/*
+============FOOTER===========*/
+footer {
+	height: 10rem;
+	width: 72rem;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;	
+	background-color: #fff;
+	align-items: center;
+	text-align: center;
+	font-size: 2rem;
+
+}
+
+.home .image {
+	width: 5rem;
+	height: 5rem;
+	background: url("images/sprite.png") no-repeat;
+	background-position: -270px 0;
+	background-size: cover;
+
+}
+.home a:link {
+	text-decoration: none;
+	color: #5fc0cd;
+}
+.write {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 10rem;
+	background-color: #5fc0cd;
+
+}
+.write .image {
+	width: 5rem;
+	height: 5rem;
+	background: url("images/sprite.png") no-repeat;
+	background-position: -160px 0;
+	background-size: cover;
+	position: relative;
+	top: 2rem;
+	left: 2.5rem;
+}
+
+
+.mine a:link {
+	text-decoration: none;
+	color: #e1e5e7;
+}
+.mine .image {
+	width: 5rem;
+	height: 5rem;
+	background: url("images/sprite.png") no-repeat;
+	background-position: -265px 0;
+
+}
+
+
+@media screen and (max-width: 580px){
+	.list-group-item .row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.list-group-item-price {
+	font-size: 3rem;
+	color: #e63b0e;
+	position: relative;
+	left: 7rem;
+}
+
+}
