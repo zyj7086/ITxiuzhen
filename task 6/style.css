@@ -140,7 +140,8 @@ header {
 ============FOOTER===========*/
 footer {
 	height: 10rem;
-	width: 72rem;
+	max-width: 72rem;
+	width: 100%;
 	position: fixed;
 	bottom: 0;
 	display: flex;
