@@ -37,15 +37,16 @@ header a:nth-child(2){
 .user-phone input {
 	width: 100%;
 	border: none;
+	height: 3rem;
 	padding-left: 1.7rem;
 	font-size: 1.6rem;
 }
 .user-phone .icon {
 	width: 6rem;
-	height: 1rem;
-	padding: 1rem 1.5rem;
+	height: 3rem;
+	padding: 0rem 1.5rem;
 	background: url("images/phone.png") center center no-repeat;
-
+	background-size: contain;
 	border-right: 0.2rem solid #eff0f4;
 }
 .user-pwd {
@@ -57,14 +58,15 @@ header a:nth-child(2){
 }
 .user-pwd input {
 	width: 100%;
+	height: 3rem;
 	border: none;
 	padding-left: 1.7rem;
 	font-size: 1.6rem;
 }
 .user-pwd .icon {
 	width: 6rem;
-	height: 1rem;
-	padding: 1rem 1.5rem;
+	height: 3rem;
+	padding: 0rem 1.5rem;
 	background: url("images/lock.png") center center no-repeat;
 
 	border-right: 0.2rem solid #eff0f4;
