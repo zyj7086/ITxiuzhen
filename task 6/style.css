@@ -1,62 +1,75 @@
+html {
+	font-size: 62.5%;
+}
+
 body {
 	margin:0;
 	padding: 0;
-	font-size: 62.5%;
+	
 }
 
 header {
 	background-color: #5fc0cd;
 	display: flex;
-	padding-top:0.8rem;
-	padding-bottom:0.8rem;
-	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 4rem;
+	position: fixed;
+	top:0;
+	width: 100%;
+	margin: 0;
+}
 
-}
-.container {
-	max-width:72rem; 
-}
 .btn-group {
-	margin:0 auto; 
-
+	
+	font-size: 1.5rem;
+	height: 3rem;
 }
 .btn.dark {
 	color: #fff;
 	background-color: #55a8b3;
-	font-size: 3.4rem;
-	border-radius: 1rem;
+
+	border-radius: 0.4rem;
 }
 .btn.btn-default {
-	font-size: 3.4rem;
 	color: #5fc0cd;
-	border-radius: 1rem;
+	border-radius: 0.4rem;
 }
 
 .location {
-	width: 4.5rem;
-	height: 4.5rem;
+	width: 2rem;
+	height: 2rem;
 	background:url("images/sprite.png") no-repeat;
 	background-position: 0 0;
 	background-size: cover;
 	position: absolute;
-	right: 30px;
-	bottom: 20px;
+	right: 1rem;
+	top:1rem;
 }
 
 
 /*
 =========MAIN===========*/
+main {
+	margin-top: 4rem;
+	font-size: 1.3rem;
+}
+
+
 .row.selection {
 	border-bottom: 0.1rem solid #e1e5e7;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
+	height: 3.6rem;
+	display: flex;
+	align-items: center;
+
 }
 .select {
 
-	height: 5rem;
-	font-size:2.8rem;
+	height: 1.8rem;
+
 	color:#999999;
 	text-align: center;
-	margin: 1.5rem 0;
+	vertical-align: center;
 	font-weight: bold;
 	vertical-align: center;
 }
@@ -68,8 +81,8 @@ header {
 }
 .caret {
 	position: absolute;
-	top: 1.3rem;
-	right: 2.5rem;
+	top: 0.9rem;
+	right: 0.4rem;
 }
 
 
@@ -77,44 +90,42 @@ header {
 
 
 .list-group-item-title {
-	font-size: 2.8rem;
 	color: #999;
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 }
 .list-group-item-title .date {
-	width: 2.5rem;
-	height: 2.5rem;
+	width: 1.1rem;
+	height: 1.1rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -50px 0;
+	background-position: -22px 0;
 	background-size: cover;
 	margin-right: 1rem;
 }
 .list-group-item-title .place {
-	width: 2.5rem;
-	height: 2.5rem;
+	width: 1.1rem;
+	height: 1.1rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -25px 0;
+	background-position: -11px 0;
 	background-size: cover;
-	margin-right: 1rem;
+	margin-right: 0.6rem;
 
 }
 
 
 .list-group-item-text {
 	color: #333;
-	font-size: 2.8rem;
+
 	font-weight: bold;
 	margin-left: 3rem;
-	margin-left: 7rem;
 	
 }
 
 .list-group-item-price {
-	font-size: 3rem;
+	font-size: 1.4rem;
 	color: #e63b0e;
 	position: absolute;
-	right: 3rem;
+	right: 2.3rem;
 	
 }
 .list-group-item-price span {
@@ -139,25 +150,30 @@ header {
 /*
 ============FOOTER===========*/
 footer {
-	height: 10rem;
-	max-width: 72rem;
+	height: 4.2rem;
+	background-color: #f8fafb;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+	
+	font-size: 0.9rem;
+	border-top: 0.1rem solid #f2f5f6;
+}
+footer .wraper {
+	margin-left: 7rem;
+	margin-right: 7rem;
 	display: flex;
-	justify-content: space-around;	
-	background-color: #fff;
+	justify-content: space-between;	
 	align-items: center;
 	text-align: center;
-	font-size: 2rem;
-
 }
 
+
 .home .image {
-	width: 5rem;
-	height: 5rem;
+	width: 2rem;
+	height: 2rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -270px 0;
+	background-position: -108px 0;
 	background-size: cover;
 
 }
@@ -166,21 +182,21 @@ footer {
 	color: #5fc0cd;
 }
 .write {
-	width: 10rem;
-	height: 10rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 10rem;
 	background-color: #5fc0cd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 }
 .write .image {
-	width: 5rem;
-	height: 5rem;
+	width: 2rem;
+	height: 2rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -160px 0;
+	background-position: -64px 0;
 	background-size: cover;
-	position: relative;
-	top: 2rem;
-	left: 2.5rem;
 }
 
 
@@ -189,24 +205,12 @@ footer {
 	color: #e1e5e7;
 }
 .mine .image {
-	width: 5rem;
-	height: 5rem;
+	width: 2rem;
+	height: 2rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -265px 0;
+	background-position: -85px 0;
+	background-size: cover;
+
 
 }
 
-
-@media screen and (max-width: 580px){
-	.list-group-item .row {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.list-group-item-price {
-	font-size: 3rem;
-	color: #e63b0e;
-	position: relative;
-	left: 7rem;
-}
-
-}

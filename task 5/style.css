@@ -39,6 +39,7 @@ header img {
 	height: 1.6rem;
 	position: absolute;
 	left: 1.5rem;
+	top: 1rem;
 
 
 }
@@ -56,8 +57,9 @@ main {
 .hero {
 	background:url('images/bg.png') no-repeat top left;
 	background-size: cover;
+	height: 45vw;
+	width: 100%;
 	color: #fff;
-	height: 14.5rem;
 	display: flex;
 	align-items: center;
 }
