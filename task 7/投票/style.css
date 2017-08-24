@@ -1,0 +1,158 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	padding: 0;
+	margin:0;
+	font-size: 1.5rem;
+}
+
+header {
+	background-color: #29bde0;
+	height: 3.4rem;
+	padding-left: 1.1rem;
+	padding-right: 1.1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-size: 1.7rem;
+}
+header .bars {
+	background: url("images/bars.png") no-repeat;
+	background-size: cover;
+	width: 2rem;
+	height: 2rem;
+}
+header .cross {
+	background: url("images/close.png") no-repeat;
+	background-size: cover;
+	width: 2rem;
+	height: 2rem;
+}
+
+.heading {
+	background-color: #b9e9f5;
+	height: 4rem;
+	color: #464646;
+	font-size: 1.3rem;
+	line-height: 4rem;
+	position: relative;
+	margin-top: 3.4rem;
+}
+.heading-text {
+	margin-left: 2.5rem;
+}
+#playbutton {
+	height: 2.6rem;
+	width: 2.6rem;
+
+	position: absolute;
+	top: 0.8rem;
+	right: 0.9rem;
+
+}
+
+.from {
+	width: 0.8rem;
+	height: 0.7rem;
+	background:url("images/3x.png") no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 3.5rem;
+	bottom: -0.7rem;
+}
+
+.wraper {
+	background-color: #29bde0;
+
+}
+.note {
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 1.2rem 2.1rem;
+}
+
+.selection {
+	display: flex;
+	justify-content: space-around;
+	padding: 0.8rem 2rem;
+	margin-bottom: 5%;
+}
+.col-xs-4 {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.choice {
+
+	width: 22vw;
+	height: 22vw;
+	border: 0.1rem solid #fff;
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+}
+
+.name {
+	background-color: #f5c97b;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.number {
+	background-color: #83b09a;
+	color: #d7e5de;
+}
+a {
+	color: #847761;
+}
+a:link {
+	text-decoration: none;
+	
+}
+.select:hover .operation {
+	opacity: 1;
+}
+
+.operation {
+	width: 100%;
+	position: absolute;
+	bottom: -25%;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	opacity: 0
+}
+
+.operation div {
+	width: 4vw;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.operation div img {
+	width: 80%;
+
+}
+footer {
+	height: 9.5rem;
+	background-color: #29bde0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-wrap{
+	width: 100%;
+	padding:2.1rem 3.6rem 3rem;
+}
+footer .kill {
+	background-color: #fbb435;
+}

@@ -7,7 +7,6 @@ body {
 	padding: 0;
 	
 }
-
 header {
 	background-color: #5fc0cd;
 	display: flex;
@@ -50,8 +49,9 @@ header {
 
 /*
 =========MAIN===========*/
-main {
+.container {
 	margin-top: 4rem;
+	padding: 0 5%;
 	font-size: 1.3rem;
 }
 
@@ -63,28 +63,30 @@ main {
 	align-items: center;
 
 }
-.select {
 
-	height: 1.8rem;
-
-	color:#999999;
-	text-align: center;
-	vertical-align: center;
-	font-weight: bold;
-	vertical-align: center;
+.col-xs-4 {
+	padding:0;
+	margin:1rem 0;
 }
-
+a.dropdown-toggle.btn {
+	padding-top: 0;
+	padding-bottom:0;
+	color: #999;
+	position: relative;
+}
+a.dropdown-toggle.btn .caret {
+	position: absolute;
+	right: 0.5rem;
+	top: 45%;
+}
+a.dropdown-toggle.btn:hover {
+	background-color: #fff;
+}
 
 .col-xs-4:nth-child(2) {
 	border-right: 0.1rem solid #e1e5e7;
 	border-left: 0.1rem solid #e1e5e7;
 }
-.caret {
-	position: absolute;
-	top: 0.9rem;
-	right: 0.4rem;
-}
-
 
 
 
@@ -98,7 +100,7 @@ main {
 	width: 1.1rem;
 	height: 1.1rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -22px 0;
+	background-position: -14px 0;
 	background-size: cover;
 	margin-right: 1rem;
 }
@@ -106,9 +108,9 @@ main {
 	width: 1.1rem;
 	height: 1.1rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -11px 0;
+	background-position: -25px 0;
 	background-size: cover;
-	margin-right: 0.6rem;
+	margin-right: 1rem;
 
 }
 
@@ -150,7 +152,7 @@ main {
 /*
 ============FOOTER===========*/
 footer {
-	height: 4.2rem;
+	height: 4.5rem;
 	background-color: #f8fafb;
 	width: 100%;
 	position: fixed;
@@ -162,6 +164,7 @@ footer {
 footer .wraper {
 	margin-left: 7rem;
 	margin-right: 7rem;
+	padding:0.3rem 0; 
 	display: flex;
 	justify-content: space-between;	
 	align-items: center;
@@ -173,12 +176,11 @@ footer .wraper {
 	width: 2rem;
 	height: 2rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -108px 0;
+	background-position: -110px 0;
 	background-size: cover;
 
 }
-.home a:link {
-	text-decoration: none;
+.home a {
 	color: #5fc0cd;
 }
 .write {
@@ -195,22 +197,21 @@ footer .wraper {
 	width: 2rem;
 	height: 2rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -64px 0;
+	background-position: -67px 2px;
 	background-size: cover;
 }
 
 
-.mine a:link {
-	text-decoration: none;
-	color: #e1e5e7;
+.mine a {
+	text-decoration: none !important;
+	color: #999;
 }
 .mine .image {
 	width: 2rem;
 	height: 2rem;
 	background: url("images/sprite.png") no-repeat;
-	background-position: -85px 0;
+	background-position: -88px 0;
 	background-size: cover;
-
 
 }
 

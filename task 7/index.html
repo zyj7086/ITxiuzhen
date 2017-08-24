@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Task 7</title>
+	<title>Task 7 登录页</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 	
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
-<header>
+<header class="navbar-fixed-top">
 	<img src="images/icon-bar.png">
 </header>
-<main>
-	<div>上次游戏：捉鬼猜词版</div>
-	<div></div>
-</main>
+<div class="container">
+	<button class="btn btn-default btn-block last-time">
+		上次游戏：捉鬼猜词版
+		<a href="#"><img src="images/back.png"></a>
+	</button>
+	
+	
+	<div class="table">
+			<div class="table-title">捉鬼游戏</div>
+			<div class="table-cell">
+				<a href="vote.html">
+					<button class="btn btn-info btn-block">简化版</button>
+				</a>
+				<p class="text-mute">有1133个用户正在玩此款游戏</p>
+			</div>
+			<div class="table-cell">
+				<a href="vote.html">
+					<button class="btn btn-info btn-block">猜词版</button>
+				</a>
+				<p class="text-mute">有1133个用户正在玩此款游戏</p>
+			</div>
+			<div class="table-cell">
+				<a href="vote.html">
+					<button class="btn btn-info btn-block">白痴版</button>
+				</a>
+				<p class="text-mute">有1133个用户正在玩此款游戏</p>
+			</div>
+			<div class="controller">
+				<a href="#"><div class="pointer active"></div></a>
+				<a href="#"><div class="pointer"></div></a>
+				<a href="#"><div class="pointer"></div></a>
+				<a href="#"><div class="pointer"></div></a>
+			</div>
+			<a href="#" id="next-page"><img src="images/triangle.png"></a>
+	</div> <!-- end table -->
+</div><!-- end container -->
 
 
 
