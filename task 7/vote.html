@@ -16,7 +16,8 @@
 	</header>
 	<div class="heading">
 		<div class="heading-text">发言讨论结束，大家请投票</div>
-		<img id="playbutton" src="images/play.png">
+		<a href="javascript:void(0);" onclick="toggleAudio()" ><img id="playbutton" src="images/play.png"></a>
+		<audio id="myAudio" src="audio/财富自由.mp3" controls="controls" "></audio>
 		<div class="from"></div>
 	</div>
 	<div class="wraper">
@@ -372,7 +373,20 @@
 		</div>
 	</footer>
 
+<script>
+var x = document.getElementById("myAudio"); 
+var play = false;
+function toggleAudio(){
+	if(!play){
+		x.play();
+		play=true;
+	}else{
+		x.pause();
+		play=false;
+	}
+}
 
+</script>
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
