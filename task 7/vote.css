@@ -149,11 +149,15 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 .footer-wrap{
 	width: 100%;
 	padding:2.1rem 3.6rem 3rem;
 }
 footer .kill {
+	height: 4.5rem;
+	font-size: 2rem;
 	background-color: #fbb435;
+	color: #fff;
 }

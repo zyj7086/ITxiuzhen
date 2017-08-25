@@ -5,7 +5,6 @@ html {
 body {
 	margin:0;
 	padding: 0;
-	
 }
 header {
 	background-color: #5fc0cd;
@@ -53,6 +52,7 @@ header {
 	margin-top: 4rem;
 	padding: 0 5%;
 	font-size: 1.3rem;
+
 }
 
 
@@ -120,16 +120,17 @@ a.dropdown-toggle.btn:hover {
 
 	font-weight: bold;
 	margin-left: 3rem;
-	
+	margin-right: 12rem;
+	text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
 }
 
 .list-group-item-price {
 	font-size: 1.4rem;
 	color: #e63b0e;
 	position: absolute;
-	right: 2.3rem;
-	
+	right: 2rem;
 }
+
 .list-group-item-price span {
 	color: #5fc0cd;
 }
@@ -139,6 +140,7 @@ a.dropdown-toggle.btn:hover {
 	display: flex;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	
 }
 
 
