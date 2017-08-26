@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #f0f0f0;
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 a:hover {
 	text-decoration: none;
@@ -20,7 +21,7 @@ header img {
 }
 .container {
 	margin-top: 3.4rem;
-	font-size: 1.7rem;
+	font-size: 1.8rem;
 }
 .last-time {
 	background-color: #fff;
@@ -50,15 +51,20 @@ header img {
 	padding-top: 1.3rem;
 	padding-bottom: 1.3rem;
 	margin-bottom: 1.5rem;
+	font-size: 1.9rem;
 }
 .table-cell {
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
 
+
 }
 .table-cell button {
 	height: 6.6rem;
 	margin-bottom: 1.5rem;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	letter-spacing: 5px;
 }
 .table p {
 	font-size: 1.3rem;

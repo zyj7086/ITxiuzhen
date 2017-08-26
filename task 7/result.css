@@ -111,11 +111,12 @@ footer {
 .btn-group {
 	padding:1rem 3%;
 }
-.btn-danger {
+#oneMoreTime {
 	background-color: #f66f6f;
 	border-radius: 5px;
+
 }
-.btn-warning {
+#toShare {
 	background-color: #fbb435;
 	border-radius: 5px;
 }

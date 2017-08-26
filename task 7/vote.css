@@ -66,7 +66,7 @@ header .cross {
 
 .wraper {
 	background-color: #29bde0;
-
+	overflow: hidden;
 }
 .note {
 	color: #fff;
