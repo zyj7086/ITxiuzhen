@@ -16,7 +16,7 @@ a:hover {
 	width: 62.5%;
 }
 #main-content {
-	padding-bottom: 18rem;
+	padding-bottom: 5%;
 }
 /*============header==============*/
 .top-bar {
@@ -181,7 +181,7 @@ main {
 
 
 .content-paragraphs {
-	padding: 3% 7% 20%;
+	padding: 3% 7% 10%;
 }
 .content-paragraphs p {
 	line-height: 2.2rem;
@@ -201,6 +201,7 @@ footer {
 .tb1 {
 	height: 17rem;
 	width: 24rem;
+	margin-right: 1rem;
 }
 .th1 {
 	height: 50%;
@@ -216,10 +217,13 @@ footer {
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+
 
 }
 footer a {
+	color: #fff;
+}
+footer a:hover {
 	color: #fff;
 }	
 .td1 a:nth-child(1){
@@ -252,20 +256,22 @@ footer a {
 	font-size: 1.4rem;
 	height: 50%;
 	display: flex;
-/*	align-items: center;*/
+
 	flex-wrap: wrap;
 }
 .td2 a{
 	width: 50%;
-	
+	height: 50%;
 }
 .td2 a div {
 	display: inline-block;
+	padding-bottom: 1rem;
 }
 .td2 a:hover div {
 
 	color: #fff;
 	border-bottom: 1px solid #fff;
+
 }
 
 
@@ -292,8 +298,6 @@ footer a {
 	vertical-align: middle;
 
 }
-
-
 
 
 

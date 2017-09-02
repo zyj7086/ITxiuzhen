@@ -8,7 +8,7 @@ a {
 }
 a:hover {
 	text-decoration:none;
-	color: #999;
+
 }
 .container {
 	width: 62.5%;
@@ -18,7 +18,7 @@ a:hover {
 .top-bar {
 	font-size: 1.4rem;
 	color:  #29b078;
-	height: 3.9rem;
+	min-height: 3.9rem;
 	display: flex;
 	align-items: center;
 }
@@ -164,6 +164,7 @@ a:hover {
 	background-color: #fff;
 	padding: 3rem;
 	border: 1px solid rgba(0,0,0,.3);
+	min-width: 18rem;
 }
 .demo h3 {
 	text-align: center;
@@ -194,22 +195,45 @@ a:hover {
 }
 .companies {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
 .company {
-	width: 17rem;
-	height: 17rem;
+	width: 12.5vw;
+	min-width: 12.5rem;
+	height: 13rem;
+	padding:20%;
 	background: #fff;
-	box-shadow: 0 1px 1px 1px rgba(0,0,0,.3);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-clip: padding-box;
+	position: relative;
+	margin-bottom: 0.5rem;
 }
 .company img{
 	display: block;
+	max-width: 100%;
 }
-
+.companies a:hover .company {
+	box-shadow: 0.5rem 0.5rem 1rem #e7e7e7;
+    border-left: 1rem solid transparent;
+}
+#alibaba{
+	z-index: -1;
+}
+#jinshanyun{
+	z-index: -2;
+}
+#huanxin {
+	z-index: -3;
+}
+#yuntongxun{
+	z-index: -4;
+}
+#qiniu{
+	z-index: -5;
+}
 /*============friends==============*/
 .friends {
 	background-color: #fff;
@@ -230,11 +254,15 @@ a:hover {
 	width: 7.6rem;
 	height: 3.5rem;
 	display: flex;
-	align-items: center;
+	padding: 0.8rem 0;
 	justify-content: space-between;
+	
+
 }
 .friendslinks a:hover {
 	border-bottom: 1px solid #29b078;
+	color: #999;
+
 } 
 /*============footer==============*/
 footer {
@@ -250,6 +278,7 @@ footer {
 .tb1 {
 	height: 17rem;
 	width: 24rem;
+	margin-right: 1rem;
 }
 .th1 {
 	height: 50%;
@@ -265,10 +294,13 @@ footer {
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+
 
 }
 footer a {
+	color: #fff;
+}
+footer a:hover {
 	color: #fff;
 }	
 .td1 a:nth-child(1){
@@ -301,20 +333,22 @@ footer a {
 	font-size: 1.4rem;
 	height: 50%;
 	display: flex;
-/*	align-items: center;*/
+
 	flex-wrap: wrap;
 }
 .td2 a{
 	width: 50%;
-	
+	height: 50%;
 }
 .td2 a div {
 	display: inline-block;
+	padding-bottom: 1rem;
 }
 .td2 a:hover div {
 
 	color: #fff;
 	border-bottom: 1px solid #fff;
+
 }
 
 
@@ -353,5 +387,9 @@ footer a {
 	}
 	.feature {
 		margin:0 auto;
+	}
+	.companies {
+	flex-flow: row wrap;
+	justify-content: center;
 	}
 }
