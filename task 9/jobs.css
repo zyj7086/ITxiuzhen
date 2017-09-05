@@ -14,7 +14,7 @@ a:hover {
 }
 .container {
 	width: 62.5%;
-	padding: 0;
+
 }
 
 /*============header==============*/
@@ -25,24 +25,38 @@ a:hover {
 	display: flex;
 	align-items: center;
 }
+.social {
+	float: right;
+}
 .social a {
 	margin: 0 0.8rem;
 }
 .navbar {
 	background-color: #29b078;
 	margin-bottom: 0;
+	height: 10rem;
+	border:0;
+}
+.navbar .container {
+	height: inherit;
 }
 #mainNavbar {
 	display: flex;
 	font-size: 1.6rem;
+	float: right;
+	height: inherit;
+}
+#mainNavbar li {
+	height: inherit;
 }
 #mainNavbar li a{
-	height: 10rem;
+	height: inherit;
 	width: 10rem;
 	vertical-align: middle;
 	text-align: center;
 	display: table-cell;
-	border-bottom: 4px solid #29b078;
+	border-bottom: 0.4rem solid #29b078;
+	box-sizing: border-box;
 	
 }
 #mainNavbar li a {
@@ -55,20 +69,6 @@ a:hover {
 }
 #mainNavbar  li a:visited {
 	background-color: #29b078;
-}
-/*============navigation==============*/
-.navigation-bar .container {
-	height: 8rem;
-	display: table;
-	
-}
-.navigation-bar p {
-	display: table-cell;
-	vertical-align: middle;
-	border-bottom: 1px solid #d0d6d9;
-}
-.navigation-bar span {
-	color: #29b078;
 }
 
 /*============directions==============*/
@@ -463,9 +463,33 @@ footer a:hover {
 		display: flex;
 		justify-content: center;
 	}
+	.navbar-nav {
+		margin: 0;
+	}
 }
 @media screen and (max-width: 1465px){
 	.content-list {
 		justify-content: space-around;
+	}
+}
+@media screen and (max-width: 768px){
+	.navbar-nav {
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width: 533px){
+	.top-bar {
+	font-size: 1rem;
+	color:  #29b078;
+	text-align:center;
+	height: auto;
+	}
+
+	.social {
+		float: none;
+		margin-top:0.5rem;
+		margin-bottom:  0.5rem;
 	}
 }
