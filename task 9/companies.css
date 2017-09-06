@@ -37,34 +37,28 @@ a:hover {
 .navbar {
 	background-color: #29b078;
 	margin-bottom: 0;
-	height: 10rem;
+	height: auto;
 	border:0;
 }
-.navbar .container {
-	height: inherit;
-}
+
 #mainNavbar {
 	display: flex;
 	font-size: 1.6rem;
 	float: right;
-	height: inherit;
+
 }
-#mainNavbar li {
-	height: inherit;
-}
+
 #mainNavbar li a{
-	height: inherit;
+	height: 10rem;
 	width: 10rem;
 	vertical-align: middle;
 	text-align: center;
 	display: table-cell;
 	border-bottom: 0.4rem solid #29b078;
 	box-sizing: border-box;
-	
-}
-#mainNavbar li a {
 	color: #fff;
 }
+
 
 #mainNavbar li a:hover {
 	border-bottom-color:#fff;
@@ -332,16 +326,24 @@ footer a:hover {
 		display: flex;
 		flex-direction: column;
 	}
-	.navbar-toggle {
-		margin: 0;
-		position: relative;
-		bottom:1rem;
-	}
 	.navbar-nav {
 		margin: 0;
 	}
+	#mainNavbar {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		overflow: hidden;
+	}
+	#mainNavbar li a{
+		display: block;
+		height: 4rem;
+		width: inherit;
+		border-bottom: 0.1rem solid #29b078;
+		box-sizing: border-box;
+	}
 }
-
 
 @media screen and (max-width: 533px){
 	.top-bar {

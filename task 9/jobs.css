@@ -2,8 +2,8 @@ body {
 	font-family: "Microsoft YaHei" ,sans-serif;
 	font-size: 62.5%;
 	background-color: #fafafa;
-	font-size: 1.6rem;
 	overflow-x: hidden;
+
 }
 a {
 	color: #999;
@@ -16,7 +16,6 @@ a:hover {
 	width: 62.5%;
 
 }
-
 /*============header==============*/
 .top-bar {
 	font-size: 1.4rem;
@@ -34,34 +33,28 @@ a:hover {
 .navbar {
 	background-color: #29b078;
 	margin-bottom: 0;
-	height: 10rem;
+	height: auto;
 	border:0;
 }
-.navbar .container {
-	height: inherit;
-}
+
 #mainNavbar {
 	display: flex;
 	font-size: 1.6rem;
 	float: right;
-	height: inherit;
+
 }
-#mainNavbar li {
-	height: inherit;
-}
+
 #mainNavbar li a{
-	height: inherit;
+	height: 10rem;
 	width: 10rem;
 	vertical-align: middle;
 	text-align: center;
 	display: table-cell;
 	border-bottom: 0.4rem solid #29b078;
 	box-sizing: border-box;
-	
-}
-#mainNavbar li a {
 	color: #fff;
 }
+
 
 #mainNavbar li a:hover {
 	border-bottom-color:#fff;
@@ -70,7 +63,10 @@ a:hover {
 #mainNavbar  li a:visited {
 	background-color: #29b078;
 }
-
+/*============navigation bar===========*/
+.navigation-bar{
+	font-size: 1.6rem;
+}
 /*============directions==============*/
 .directions {
 	color: #333;
@@ -451,6 +447,12 @@ footer a:hover {
 
 
 
+
+@media screen and (max-width: 1465px){
+	.content-list {
+		justify-content: space-around;
+	}
+}
 @media screen and (max-width: 768px){
 	.directions .container {
 	display: flex;
@@ -466,19 +468,21 @@ footer a:hover {
 	.navbar-nav {
 		margin: 0;
 	}
-}
-@media screen and (max-width: 1465px){
-	.content-list {
-		justify-content: space-around;
+	#mainNavbar {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		overflow: hidden;
+	}
+	#mainNavbar li a{
+		display: block;
+		height: 4rem;
+		width: inherit;
+		border-bottom: 0.1rem solid #29b078;
+		box-sizing: border-box;
 	}
 }
-@media screen and (max-width: 768px){
-	.navbar-nav {
-		margin: 0;
-	}
-}
-
-
 @media screen and (max-width: 533px){
 	.top-bar {
 	font-size: 1rem;

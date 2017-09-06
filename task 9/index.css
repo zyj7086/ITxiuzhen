@@ -32,34 +32,28 @@ a:hover {
 .navbar {
 	background-color: #29b078;
 	margin-bottom: 0;
-	height: 10rem;
+	height: auto;
 	border:0;
 }
-.navbar .container {
-	height: inherit;
-}
+
 #mainNavbar {
 	display: flex;
 	font-size: 1.6rem;
 	float: right;
-	height: inherit;
+
 }
-#mainNavbar li {
-	height: inherit;
-}
+
 #mainNavbar li a{
-	height: inherit;
+	height: 10rem;
 	width: 10rem;
 	vertical-align: middle;
 	text-align: center;
 	display: table-cell;
 	border-bottom: 0.4rem solid #29b078;
 	box-sizing: border-box;
-	
-}
-#mainNavbar li a {
 	color: #fff;
 }
+
 
 #mainNavbar li a:hover {
 	border-bottom-color:#fff;
@@ -73,15 +67,17 @@ a:hover {
 
 .demo {
 	background-color: #fff;
-	padding: 3rem;
+	padding: 1rem;
 	border: 1px solid rgba(0,0,0,.3);
-	min-width: 18rem;
+	font-size: 1.25rem;
 }
 .demo h3 {
 	text-align: center;
+	font-size: 1.4rem;
 }
 .demo img {
 	display: block;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -96,6 +92,12 @@ a:hover {
 }
 .carousel-indicators li.active {
 	background-color: #29b078;
+}
+.carousel-control {
+	font-size: 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 /*============features==============*/
 .features {
@@ -165,34 +167,41 @@ a:hover {
 .steps-content {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 .steps-detail {
 	display: flex;
 	width: 20rem;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	height: 16.5rem;
-	margin-right: 2.2rem;
+	margin-right: 2rem;
+}
+.steps-detail p {
+	font-size: 1.1rem;
+	width: 40%;
+	margin-bottom: 0;
+}
+.steps-detail img {
+	display: block;
+	margin-left: 1.5rem;
 }
 .action {
-	width: 7rem;
-	height: 7rem;
+	width: 5.5rem;
+	height: 5.5rem;
 	border-radius: 70px;
 	background-color: #fff;
 	box-shadow: 0 1px 3px rgba(01,08,03,.15);
-	line-height: 7rem;
+	line-height: 5.5rem;
 	text-align: center;
 	color: #29b078;
 	font-size: 1.8rem;
+	margin-right: 1.5rem;
+}
+.steps-detail:nth-of-type(4n) img {
+	display: block;
 }
 
-.steps-detail p {
-	font-size: 1rem;
-	width: 80px;
-}
-.steps-detail:nth-child(4n) {
-	justify-content: space-around;
-}
 
 
 
@@ -388,7 +397,18 @@ footer a:hover {
 
 }
 
+@media screen and (min-width: 1346px){
+	.steps-detail:nth-of-type(4n) img {
+	display: none;
+}
 
+.steps-detail:nth-of-type(4n) {
+
+	justify-content: space-around;
+	width: 17rem;
+	margin-right: 0;
+}
+}
 @media screen and (max-width: 990px){
 	.features .row {
 		display: flex;
@@ -409,6 +429,36 @@ footer a:hover {
 	.navbar-nav {
 		margin: 0;
 	}
+	#mainNavbar {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		overflow: hidden;
+	}
+	#mainNavbar li a{
+		display: block;
+		height: 4rem;
+		width: inherit;
+		border-bottom: 0.1rem solid #29b078;
+		box-sizing: border-box;
+	}
+	.steps-detail {
+		margin-right: 0;
+		width: 100%;
+		justify-content: center;
+	}
+	.steps-detail p {
+	font-size: 1.3rem;
+	width: 40%;
+	margin-bottom: 0;
+}
+	.steps-detail img {
+	display: block;
+	margin-left: 0;
+}
+
+
 }
 @media screen and (max-width: 533px){
 	.top-bar {
