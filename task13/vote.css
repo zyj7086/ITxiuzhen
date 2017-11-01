@@ -113,7 +113,8 @@ header {
 
 .wraper {
   background-color: #29bde0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 9.5rem; }
   .wraper .note {
     color: #fff;
     font-size: 1.2rem;
@@ -166,12 +167,14 @@ header {
           opacity: 0; }
           .wraper .selection .col-xs-4 .choice .operation div {
             width: 4vw;
+            height: 4vw;
             background-color: #fff;
             display: flex;
             justify-content: center;
             align-items: center; }
           .wraper .selection .col-xs-4 .choice .operation img {
-            width: 80%; }
+            width: 70%;
+            height: auto; }
 
 footer {
   height: 9.5rem;
