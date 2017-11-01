@@ -1,0 +1,42 @@
+
+@mixin linear-gradient($direction:left, $star-color:#000, $end-color:#fff) {
+    background: linear-gradient($direction,$star-color 0,$end-color 100%);
+    background: -webkit-linear-gradient($direction,$star-color 0,$end-color 100%);
+    background: -ms-linear-gradient($direction,$star-color 0,$end-color 100%);
+    background: -moz-linear-gradient($direction,$star-color 0,$end-color 100%);
+}
+
+
+
+html {
+	font-size: 625%;
+}
+* {
+	margin: 0;
+	padding:0;
+}
+
+body {
+	font-family: "Microsoft YaHei" ,sans-serif;
+	background-color: #fafafa;
+}
+a {
+	color: #999;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+
+}
+.container {
+	width: 62.5%;
+	margin: 0 auto;
+}
+.container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+li {
+	list-style: none;
+}
