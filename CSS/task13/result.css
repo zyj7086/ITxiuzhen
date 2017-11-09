@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 6.4rem; }
+
+header {
+  background-color: #29bde0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1.7rem;
+  color: white;
+  padding: 1rem 1rem;
+  border-bottom: 0.1rem solid #74d4eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+  header #homepage {
+    width: 2.6rem;
+    height: 2.2rem; }
+  header #info {
+    width: 2rem;
+    height: 2.1rem; }
+
+.board {
+  margin-top: 4.4rem;
+  background-color: #29bde0;
+  padding: 1rem 10%; }
+  .board .victory {
+    position: relative;
+    text-align: center; }
+    .board .victory img {
+      margin: 0 auto;
+      width: 70%;
+      max-width: 30rem;
+      display: block; }
+    .board .victory p {
+      color: #ffc865;
+      font-size: 1.6rem;
+      line-height: 2.05rem;
+      text-align: left;
+      display: inline-block;
+      margin-top: 1rem; }
+  .board .result {
+    margin-top: 3rem; }
+    .board .result .result-list {
+      color: #fff;
+      font-size: 1.3rem;
+      padding: 0;
+      list-style: none; }
+      .board .result .result-list li {
+        line-height: 2rem; }
+
+.day {
+  padding: 0.7rem 16% 1rem 10%;
+  border-bottom: 0.1rem solid #ededed;
+  max-width: 60rem; }
+  .day .day-content-heading {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1.2rem; }
+    .day .day-content-heading b {
+      color: #515151; }
+    .day .day-content-heading span {
+      font-size: 1rem;
+      color: #c7c7c7;
+      vertical-align: bottom; }
+  .day .day-content-text {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #a6a6a6; }
+
+footer {
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  background-color: #29bde0;
+  font-size: 2rem;
+  background-color: rgba(41, 189, 224, 0.48);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+  footer .btn-group-justified {
+    display: table;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60rem; }
+    footer .btn-group-justified .btn-group {
+      display: table-cell;
+      float: none;
+      text-align: center;
+      margin: 1rem 3%;
+      width: 100%;
+      max-width: 60rem;
+      position: relative;
+      vertical-align: middle;
+      background-color: #f66f6f;
+      border-radius: 5px;
+      padding: 1rem 3%; }
+      footer .btn-group-justified .btn-group a {
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        font-size: 1.4rem; }
+      footer .btn-group-justified .btn-group #toShare {
+        background-color: #fbb435; }
+  footer .btn-group {
+    padding: 1rem 3%;
+    display: flex;
+    justify-content: space-between; }
+  footer #oneMoreTime {
+    background-color: #f66f6f; }
+  footer #toShare {
+    background-color: #fbb435;
+    border-radius: 5px; }
+
+@media screen and (min-width: 600px) {
+  .result {
+    text-align: center; }
+
+  .result-list {
+    display: inline-block; }
+
+  .result-list li {
+    line-height: 1rem;
+    text-align: left; }
+
+  .day {
+    margin: 0 auto;
+    padding: 0.7rem 5rem 1rem 5rem; }
+
+  .btn-group-justified {
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=result.css.map */

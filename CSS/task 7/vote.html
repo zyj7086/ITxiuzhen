@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 7 投票页</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="vote.css">
+</head>
+<body>
+	<header class="navbar-fixed-top">
+		<div class="bars"></div>
+		<div>投票</div>
+		<div class="cross"></div>
+	</header>
+	<div class="heading">
+		<div class="heading-text">发言讨论结束，大家请投票</div>
+		<a href="javascript:void(0);" onclick="toggleAudio()" ><img id="playbutton" src="images/play.png"></a>
+		<audio id="myAudio" src="audio/BloodCastle.mp3" preload autoplay="autoplay"></audio>
+		<div class="from"></div>
+	</div>
+	<div class="wraper">
+		<div class="note">点击得票最多人的头像</div>
+		<div class="row selection">
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>水民</div></div>
+						<div class="number">1号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>水民</div></div>
+						<div class="number">2号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>警察</div></div>
+						<div class="number">3号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+		</div> <!-- end row -->
+				<div class="row selection">
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>法官</div></div>
+						<div class="number">4号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>狙击手</div></div>
+						<div class="number">5号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>医生</div></div>
+						<div class="number">6号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+		</div> <!-- end row -->
+				<div class="row selection">
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>杀手</div></div>
+						<div class="number">7号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>水民</div></div>
+						<div class="number">8号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>水民</div></div>
+						<div class="number">9号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+		</div> <!-- end row -->
+				<div class="row selection">
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>杀手</div></div>
+						<div class="number">10号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>水民</div></div>
+						<div class="number">11号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>警察</div></div>
+						<div class="number">12号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+		</div> <!-- end row -->
+				<div class="row selection">
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>水民</div></div>
+						<div class="number">1号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>水民</div></div>
+						<div class="number">1号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+			<div class="col-xs-4">
+				<a href="#" class="select">
+					<div class="choice">
+						<div class="name"><div>水民</div></div>
+						<div class="number">1号</div>
+						<div class="operation">
+							<div>
+								<img src="images/kill.png">
+							</div>
+							<div>
+								<img src="images/magnifier.png">
+							</div>
+							<div>
+								<img src="images/target.png">
+							</div>
+							<div>
+								<img src="images/cure.png">
+							</div>
+						</div>
+				</div>
+				</a>
+			</div> <!-- end col -->
+		</div> <!-- end row -->
+		
+
+		
+	</div><!--  end container-->
+
+	<footer class="navbar-fixed-bottom">
+		<div class="footer-wrap">
+			<a href="result.html" class="btn btn-block kill">投死</a>
+		</div>
+	</footer>
+
+<script>
+var x = document.getElementById("myAudio"); 
+var play = true;
+function toggleAudio(){
+	if(!play){
+		x.play();
+		play=true;
+	}else{
+		x.pause();
+		play=false;
+	}
+}
+
+</script>
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

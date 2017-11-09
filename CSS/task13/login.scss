@@ -1,0 +1,154 @@
+@import "_reset.scss";
+$backgroundColor:#f0f0f0;
+$primaryColor:#29bde0;
+$whiteColor:#fff;
+
+@mixin prettyButton {
+			height: 6.6rem;
+			margin-bottom: 1.5rem;
+			font-size: 1.6rem;
+			line-height: 1.6rem;
+			letter-spacing: 5px;
+			background-color:$primaryColor;
+			width:100%;
+			color:$whiteColor;
+			border-color:$primaryColor;
+			border-radius:0.4rem;
+			border:none;
+			&:hover {
+				background-color:#1592af;
+			}
+}
+html {
+	font-size:62.5%;
+}
+body{
+	margin:0;
+	padding:0;
+	background-color:$backgroundColor;
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+header{
+	height:3.4rem;
+	background-color:$primaryColor;
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:99;
+	border-radius:0;
+	img {
+		position:absolute;
+		left:1.2rem;
+		top:1rem;
+	}
+}
+.container{
+	margin-top: 3.4rem;
+	font-size: 1.8rem;
+	margin-right: auto;
+  	margin-left: auto;
+  	padding-right:15px;
+  	padding-left:15px;
+  	.last-time {
+  		background-color: $whiteColor;
+		border:0.1rem solid #dbdbdb;
+		color: #9a9a9a;
+		margin-top: 1.2rem;
+		height: 6rem;
+		margin-bottom: 1rem;
+		position: relative;
+		width:100%;
+		padding: 0.6rem 1.2rem;
+		font-size: 1.4rem;
+		border-radius:4px;
+		font-family: sans-serif;
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+		  background-color: #ddd;
+		  color: #333;
+		  border-color: #999;
+}
+		a {
+		position: absolute;
+		right: 0.8rem;
+		top: 2rem;
+ 	 	}
+	}
+}
+
+
+.table {
+	text-align: center;
+	list-style: none;
+	background-color: $whiteColor;
+	border:0.1rem solid #dbdbdb;
+	position: relative;
+	.table-title {
+	color: #fcce7a;
+	height: 4.4rem;
+	border-bottom: 0.1rem solid #fcce7a;
+	padding-top: 1.3rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.9rem;
+	}
+	.table-cell {
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+		margin-bottom: 2.5rem;
+		button {
+			@include prettyButton;
+		}
+
+	}
+	 p {
+	font-size: 1.3rem;
+	color: #787878;
+	}
+	.controller {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 1.9rem;
+		.pointer {
+			background-color: #f0f0f0;
+			width: 0.9rem;
+			height: 0.9rem;
+			border-radius: 100px;
+			margin-left: 0.5rem;
+			&.active {
+				background-color:#69d1e9;
+			}
+		}
+	}
+	
+
+	#next-page {
+		position: absolute;
+		right: 0.4rem;
+		top: 50%;
+	}
+
+}
+
+
+
+
+@media (min-width:768px){
+	.container{
+		max-width: 728px;
+	}
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}

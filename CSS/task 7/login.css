@@ -1,0 +1,95 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+a:hover {
+	text-decoration: none;
+}
+header {
+	height: 3.4rem;
+	background-color: #29bde0;
+}
+header img {
+	position: absolute;
+	left: 1.2rem;
+	top:1rem;
+}
+.container {
+	margin-top: 3.4rem;
+	font-size: 1.8rem;
+}
+.last-time {
+	background-color: #fff;
+	border:0.1rem solid #dbdbdb;
+	color: #9a9a9a;
+	margin-top: 1.2rem;
+	height: 6rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+.last-time a {
+	position: absolute;
+	right: 0.8rem;
+	top: 2rem;
+}
+.table {
+	text-align: center;
+	list-style: none;
+	background-color: #fff;
+	border:0.1rem solid #dbdbdb;
+	position: relative;
+}
+.table-title {
+	color: #fcce7a;
+	height: 4.4rem;
+	border-bottom: 0.1rem solid #fcce7a;
+	padding-top: 1.3rem;
+	padding-bottom: 1.3rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.9rem;
+}
+.table-cell {
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+
+
+}
+.table-cell button {
+	height: 6.6rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	letter-spacing: 5px;
+}
+.table p {
+	font-size: 1.3rem;
+	color: #787878;
+}
+
+#next-page {
+	position: absolute;
+	right: 0.4rem;
+	top: 50%;
+}
+.controller {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1.9rem;
+}
+.pointer {
+	background-color: #f0f0f0;
+	width: 0.9rem;
+	height: 0.9rem;
+	border-radius: 100px;
+	margin-left: 0.5rem;
+}
+
+.pointer.active {
+	background-color:#69d1e9;
+}
