@@ -1,0 +1,144 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+	padding:0;
+	margin: 0;
+}
+
+header {
+	height: 4.4rem;
+	background-color: #29bde0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: 1.7rem;
+	color: white;
+	padding:1rem 1rem;
+	border-bottom: 0.1rem solid #74d4eb;
+}
+
+#homepage {
+	width: 2.6rem;
+	height: 2.2rem;
+}
+#info {
+	width: 2rem;
+	height: 2.1rem;
+}
+
+.board {
+	margin-top: 4.4rem;
+	background-color: #29bde0;
+	padding:1rem 10%; 
+}
+
+.victory {
+	position: relative;
+	text-align: center;
+}
+.victory img {
+	margin:0 auto;
+	width: 70%;
+	max-width: 30rem;
+}
+.victory p{
+	color: #ffc865;
+	font-size: 1.6rem;
+	line-height: 2.05rem;
+	text-align: left;
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+.result {
+	margin-top: 3rem;
+}
+.result-list {
+	color: #fff;
+	font-size: 1.3rem;
+	padding: 0;
+	list-style: none;
+}
+
+.result-list li {
+	line-height: 0.6rem;
+}
+
+
+.day {
+	padding: 0.7rem 16% 1rem 10%;
+	border-bottom:0.1rem solid #ededed;
+	max-width: 60rem;
+} 
+
+.day-content-heading {
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 1.2rem;
+
+}
+.day-content-heading b {
+	color: #515151;
+}
+.day-content-heading span {
+
+	font-size: 1rem;
+	color: #c7c7c7;
+	vertical-align: bottom;
+}
+.day-content-text {
+	margin-bottom: 0.5rem;
+	font-size: 1.3rem;
+	color: #a6a6a6;
+}
+
+footer {
+	height: 6.4rem;
+	display: flex;
+	align-items: center;
+	background-color:  #29bde0;
+	font-size: 2rem;
+	background-color: rgba(41,189,224,.48);
+}
+.btn-group-justified {
+	max-width: 60rem;
+}
+.btn-group {
+	padding:1rem 3%;
+}
+#oneMoreTime {
+	background-color: #f66f6f;
+	border-radius: 5px;
+
+}
+#toShare {
+	background-color: #fbb435;
+	border-radius: 5px;
+}
+
+
+
+@media screen and (min-width: 600px){
+	.result {
+		text-align: center;
+	}
+	.result-list {
+		display: inline-block;
+	}
+	.result-list li {
+	line-height: 1rem;
+	text-align: left;
+	}
+	.day {
+		margin: 0 auto;
+		padding: 0.7rem 5rem 1rem 5rem;
+	}
+	.btn-group-justified {
+		margin: 0 auto;
+	}
+} 

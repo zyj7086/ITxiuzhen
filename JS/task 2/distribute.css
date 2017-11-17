@@ -1,0 +1,188 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 625%;
+	overflow-x: hidden;
+}
+header {
+	height: .34rem;
+	background-color: #29bde0;
+	color:white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 .1rem;
+
+}
+header p{
+	font-size: .17rem;
+	margin-bottom: 0;
+}
+body{
+	background-color: #f0f0f0;
+}
+.wrap {
+	padding: .2rem;
+	margin-top: .34rem;
+}
+.section-1 {
+	display: flex;
+
+}
+.heading {
+	background-color: #fff;
+	width: .6rem;
+	padding-left: .2rem;
+	padding-right: .25rem;
+	display: flex;
+	align-items: center;
+	border-right: 1px solid #ededed;
+	flex-grow: 0;
+}
+.heading p {
+	font-size: .18rem;
+	color: #444;
+}
+.content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	
+}
+.board {
+	flex-grow: 1;
+	background-color: #fbfbfb;
+	font-size: .13rem;
+	color: #a1a1a1;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #ebebeb;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+}
+.unit {
+
+	height: .4rem;
+	padding: .1rem;
+	display: flex;
+	align-items: center;
+}
+.unit p{
+
+	margin-bottom: 0;
+}
+.unit input {
+	border: none;
+	outline: none;
+	width: .2rem;
+	display: inline-block;
+}
+.symbol{
+	display: inline-block;
+	height: .06rem;
+	width: .06rem;
+	background-color: yellow;
+	margin-left: .15rem;
+	margin-right: .1rem;
+}
+.details {
+	flex-grow: 0;
+	padding: .1rem;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
+	padding-left: 1rem;
+}
+.details-heading {
+	background-color: #fff;sssss
+	font-size: .25rem;
+	color: black;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #ebebeb;
+
+}
+.detail {
+	display: flex;
+	width: 2rem;
+	height: .2rem;
+	margin: .05rem;
+	display: none;
+}
+.detail input {
+	width: 50px;
+}
+.details p {
+	margin-bottom: 0;
+	color: #29bde0;
+}
+
+.words {
+	margin-top: .04rem;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: .15rem;
+
+}
+.words input {
+	border:none;
+	border-bottom: 1px solid #f0f0f0;
+	margin: 0 .15rem;
+	font-size: 14px;
+	outline: none;
+}
+::-webkit-input-placeholder {
+	color: #d7d7d7;
+}
+input[name="people"] {
+
+	padding: .15rem 0 .12rem;
+
+}
+input[name="ghosts"] {
+
+	padding: .21rem 0 .14rem;
+
+}
+.number {
+	margin-top: .04rem;
+	background-color: #fff;
+	padding-top:.1rem; 
+	padding-left: .15rem;
+	height: 1rem;
+}
+.number p {
+	font-size: .14rem;
+}
+.note {
+	color: #fab344;
+	margin-left: .1rem;
+	font-size: .13rem;
+}
+input[name="num"]{
+	font-size: .17rem;
+	color: #fab344;
+	margin:0 .13rem;
+	width: .3rem;
+	height: .21rem;
+	background-color: #f4f5f5;
+	border: none;
+	outline: none;
+}
+
+footer {
+	padding: 0  .2rem;
+}
+footer button {
+	width: 100%;
+	background-color: #fab344;
+	font-size: .2rem;
+	border:none;
+	outline: none;
+	color: #fff;
+	padding: .11rem 0 .14rem;
+}
