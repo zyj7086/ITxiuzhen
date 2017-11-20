@@ -11,7 +11,7 @@ btn.addEventListener('click',function(){
 	reset();
 
 	var num = document.getElementById('players').value;
-	var regx = /1[0-8]|[4-9]/g;
+	var regx = /^1[0-8]$|^0?[4-9]$/g;
 	var vf = regx.test(num);
 	var note = document.getElementsByClassName('note')[0];
 	if(!vf){
@@ -110,25 +110,17 @@ function shuffle(array) {
 }
 
 
-function verify(n){
-	var regx = /1[0-8]|[4-9]/g;
-	var vf = regx.test(n);
-	var note = document.getElementsByClassName('note')[0];
-	if(!vf){
-		note.textContent+=(',请输入正确数字');
-		return;
-	}
-}
+
 
 function reset(){
 	var num = document.getElementById('players').value;
 	
-	var killers = Number(document.getElementById('killer_num').value);
+	var killers = document.getElementById('killer_num');
 	//获取杀手人数
-	
-	var commoners = Number(document.getElementById('commoner_num').value);
+
+	var commoners = document.getElementById('commoner_num');
 	//获取平民数量
-	
+
 	var arr = document.getElementsByClassName('detail'); 
 	// 获取页面上的Dom数组，默认值为16个
 
@@ -141,8 +133,8 @@ function reset(){
 	}
 
 	num = 0;
-	killers = 0;
-	commoners = 0;
+	killers.value = 0;
+	commoners.value = 0;
 	arr =[];
 	inputs = [];
 }
