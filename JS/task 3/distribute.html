@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 2 玩家配比</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/distribute.css">
+</head>
+<body>
+<header class="navbar-fixed-top">
+	<img src="images/backward.png" id="backward">
+	<p>参数设置</p>
+	<img src="images/question.png" id="question">
+</header>
+<div class="wrap">
+	<div class="section-1">
+		<div class="heading">
+			<p>玩家配比</p>
+		</div>
+		<div class="content">
+			<div class="board">
+				<div id="details">
+					
+				</div>
+				<div id="toDistribute">
+					<a href="javascript:void(0)" id="distribute">点击设置</a>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+	<div class="words">
+		<input type="text" name="people" placeholder="水民词组">
+		<input type="text" name="ghosts" placeholder="幽灵词组">
+	</div>
+	<div class="number">
+		<p>玩家人数<input type="text" name="num" id="players" onkeydown='if(event.keyCode==8){this.value=""}'>人<span class="note"><!-- 玩家数量为4-18 --></span></p>
+	</div>
+</div>
+<footer>
+		<button id="toShuffle">去发牌</button>
+
+</footer>
+
+
+<script type="text/javascript" src="js/distribute.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

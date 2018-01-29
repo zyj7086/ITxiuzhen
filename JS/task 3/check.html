@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 2 玩家配比</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/check.css">
+</head>
+<body>
+<header>
+	<img src="images/backward.png" id="backward">
+	<p>查看身份</p>
+	<img src="images/close.png" id="question">
+</header>
+<div class="container">
+<div class="board">
+	<span id="num">1</span>
+	<div id="check">
+		<img src="images/check.png">
+	</div>
+	<div id="secret">
+		<div class="description">
+		<div class="headpng">
+			
+		</div>
+			<h1 class="text-center" id="role">角色：幽灵</h1>
+<!-- 			<h1 class="text-center" id="words">词组：西伯利亚</h1> -->
+		</div>
+		<div class="note">
+			<p>想办法猜到别人的词，同时还要注意不要暴露自己哦！</p>
+		</div>
+	</div>
+	
+</div>
+</div> <!-- container -->
+<footer>
+	<div class="footer-wrap">
+		<a href="javascript:void(0)" class="btn btn-block kill" id="showId" onclick="showIdentity()">查看1号身份</a>
+		<a href="javascript:void(0)" class="btn btn-block kill" id="passToNext" onclick="passToNextPlayer()">隐藏并传递给2号</a>
+		<a href="javascript:void(0)" class="btn btn-block kill" id="toJudge">法官查看</a>
+	</div>
+</footer>
+	
+
+
+
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/check.js"></script>
+</body>
+</html>
